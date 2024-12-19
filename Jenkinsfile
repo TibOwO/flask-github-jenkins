@@ -12,7 +12,6 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
-                    export PATH=$PATH:/usr/local/bin  # Assurez-vous que python3 est accessible
                     python3 -m venv venv
                     . venv/bin/activate
                     pip install -r requirements.txt
