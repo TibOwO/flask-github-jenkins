@@ -6,7 +6,7 @@ IMAGE_NAME = "flask-github-jenkins"
 stages {
 stage('Clone Repository') {
 steps {
-git branch: 'main', url: 'https://github.com/<votre-utilisateur>/flask-github-jenkins.git'
+git branch: 'main', url: 'https://github.com/TibOwO/flask-github-jenkins.git'
 }
 }
 stage('Install Dependencies') {
