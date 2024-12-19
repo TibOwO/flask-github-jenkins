@@ -12,7 +12,7 @@ git branch: 'main', url: 'https://github.com/TibOwO/flask-github-jenkins.git'
 stage('Install Dependencies') {
 steps {
 sh '''
-python -m venv venv
+python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 '''
